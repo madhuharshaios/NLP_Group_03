@@ -1,0 +1,11 @@
+﻿__pycache__/
+*.py[cod]
+venv/
+.env
+.ipynb_checkpoints/
+
+# Keep folders structured on GitHub but ignore local heavy data files
+data/*
+models/*
+!data/.gitkeep
+!models/.gitkeep
