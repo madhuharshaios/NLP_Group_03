@@ -8,9 +8,9 @@
 
 | Student ID | Member | ML Model | DL Model |
 |------------|---------|----------|----------|
-| CIT-24-01-0301 | Member 01 | Logistic Regression | CNN |
-| CIT-24-01-0070 | Member 02 | Naive Bayes | LSTM |
-| CIT-24-01-0082 | Member 03 | SVM | GRU |
+| CIT-24-01-0301 | Member 01 | TextRank | CNN |
+| CIT-24-01-0070 | Member 02 | LSA | LSTM |
+| CIT-24-01-0082 | Member 03 | TF-IDF Sentence Ranking | GRU |
 
 ---
 
@@ -97,9 +97,9 @@ pip install -r requirements.txt
 ### Run Model Training
 
 ```bash
-python src/member1_logreg.py
-python src/member2_nb.py
-python src/member3_svm.py
+python src/member1_textRank.py
+python src/member2_lsa.py
+python src/member3_tfidf.py
 ```
 
 ### Run Deep Learning Models
@@ -117,38 +117,47 @@ streamlit run app.py
 ```
 
 ---
+## 🧠 Model Summary
 
-## Model Summary
+### 👤 Member 01 (CIT-24-01-0301)
 
-### Member 01
+**Machine Learning Model:**
+- TextRank
 
-**Machine Learning Model**
-- Logistic Regression
-
-**Deep Learning Model**
+**Deep Learning Model:**
 - CNN (Convolutional Neural Network)
 
+**Purpose:**
+- TextRank is used for extractive summarization by ranking important sentences.
+- CNN captures local text patterns and improves feature-based summarization.
+
 ---
 
-### Member 02
+### 👤 Member 02 (CIT-24-01-0070)
 
-**Machine Learning Model**
-- Naive Bayes
+**Machine Learning Model:**
+- LSA (Latent Semantic Analysis)
 
-**Deep Learning Model**
+**Deep Learning Model:**
 - LSTM (Long Short-Term Memory)
 
+**Purpose:**
+- LSA extracts hidden semantic topics from text.
+- LSTM learns long-term dependencies in sequential text for better summarization.
+
 ---
 
-### Member 03
+### 👤 Member 03 (CIT-24-01-0082)
 
-**Machine Learning Model**
-- SVM (Support Vector Machine)
+**Machine Learning Model:**
+- TF-IDF Sentence Ranking
 
-**Deep Learning Model**
+**Deep Learning Model:**
 - GRU (Gated Recurrent Unit)
 
----
+**Purpose:**
+- TF-IDF ranks sentences based on keyword importance.
+- GRU improves sequence learning with efficient recurrent processing.
 
 ## Evaluation Metrics
 
@@ -167,14 +176,15 @@ The following metrics are used to evaluate model performance:
 
 The project compares the performance of six models:
 
-| Model | Type | Status |
-|---------|---------|---------|
-| Logistic Regression | ML | Evaluated |
-| Naive Bayes | ML | Evaluated |
-| SVM | ML | Evaluated |
-| CNN | DL | Evaluated |
-| LSTM | DL | Evaluated |
-| GRU | DL | Evaluated |
+| Model                   | Type | Status    |
+| ----------------------- | ---- | --------- |
+| TextRank                | ML   | Evaluated |
+| LSA                     | ML   | Evaluated |
+| TF-IDF Sentence Ranking | ML   | Evaluated |
+| CNN                     | DL   | Evaluated |
+| LSTM                    | DL   | Evaluated |
+| GRU                     | DL   | Evaluated |
+
 
 The best-performing model will be selected and integrated into the final Streamlit web application for text summarization.
 
