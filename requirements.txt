@@ -1,0 +1,15 @@
+numpy
+pandas
+matplotlib
+scikit-learn
+nltk
+spacy
+wordcloud
+seaborn
+tensorflow
+keras
+streamlit
+joblib
+pickle-mixin
+rouge-score
+tqdm
