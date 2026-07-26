@@ -1,0 +1,8 @@
+venv/
+__pycache__/
+.ipynb_checkpoints/
+saved_models/
+outputs/
+*.pyc
+*.pkl
+*.keras
