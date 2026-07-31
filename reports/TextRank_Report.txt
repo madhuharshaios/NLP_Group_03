@@ -1,0 +1,47 @@
+NEWS SUMMARIZATION USING TEXTRANK
+================================
+
+Project Objective
+-----------------
+This project implements an extractive news summarization system using the TextRank algorithm to generate summaries from news articles.
+
+Dataset
+-------
+Dataset Name : News Summary Dataset
+Total Records : 4396
+
+Preprocessing
+-------------
+- Converted text to lowercase
+- Removed punctuation and special characters
+- Removed extra spaces
+- Prepared article and summary columns
+
+TextRank Model
+--------------
+The TextRank algorithm ranks sentences based on their importance and selects the highest-ranked sentences to generate the final summary.
+
+Evaluation
+----------
+The model was evaluated using ROUGE metrics:
+- ROUGE-1
+- ROUGE-2
+- ROUGE-L
+
+Results
+-------
+- Successfully generated summaries
+- Results saved in textrank_results.csv
+- ROUGE evaluation completed successfully
+
+Application
+-----------
+A Streamlit application was developed to summarize news articles entered by the user.
+
+Conclusion
+----------
+The TextRank model successfully performs extractive news summarization and generates meaningful summaries from news articles.
+
+Author
+------
+Yuradi Pramuditha- Member 01
