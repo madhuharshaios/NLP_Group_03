@@ -1,11 +1,10 @@
-﻿__pycache__/
+﻿# Python cache
+__pycache__/
 *.py[cod]
+
+# Virtual environment
 venv/
 .env
-.ipynb_checkpoints/
 
-# Keep folders structured on GitHub but ignore local heavy data files
-data/*
-models/*
-!data/.gitkeep
-!models/.gitkeep
+# Jupyter
+.ipynb_checkpoints/
