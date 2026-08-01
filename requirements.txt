@@ -1,0 +1,10 @@
+tensorflow
+keras
+numpy
+pandas
+scikit-learn
+nltk
+rouge-score
+matplotlib
+wordcloud
+streamlit
